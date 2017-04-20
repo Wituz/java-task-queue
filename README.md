@@ -10,11 +10,11 @@ The tasks with highest priority will of course be ran first.
 **Priority levels**  
 These are the defaults, but feel free to edit TaskPriority.java for your need.  
 The priority is read in chronological order from TaskPriority, assuming the first is the highest and the last is the lowest. 
-* LOWEST
-* LOW
-* MEDIUM
-* HIGH
 * HIGHEST
+* HIGH
+* MEDIUM
+* LOW
+* LOWEST
 
 **A useless but somewhat clarifying example**  
 *The point is that you can extend or change the work() method of the task object, then you can run a custom task.*
@@ -22,7 +22,7 @@ The priority is read in chronological order from TaskPriority, assuming the firs
 
 public static void main(String[] args) {
 
-  //The queue will always wait for tasks in the background, so we might as well run it now. 
+  // The queue will always wait for tasks in the background, so we might as well run it now. 
   Queue queue = new Queue();
   queue.run(); 
   
